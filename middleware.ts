@@ -10,7 +10,7 @@ const isProtectedRoute = createRouteMatcher([
 ]);
 
 
-const isProtectedRoute = createRouteMatcher(['/dashboard(.*)', '/forum(.*)'])
+
 
 export default clerkMiddleware(async (auth, req) => {
   const { userId, redirectToSignIn } = await auth()
